@@ -238,7 +238,7 @@ def analyze_url(raw: str, check_age: bool = True) -> dict:
             if label == brand:
                 findings.append((f"Uses the brand name '{brand}' on an unusual domain ending", 25))
                 break
-            if brand in _variants(label) and label != brand:
+            if label != brand and (brand in _variants(label) or any(brand in _variants(t) for t in tokens)):
                 findings.append((f"Uses look-alike characters to imitate '{brand}'", 40))
                 break
             if len(brand) >= 5 and difflib.SequenceMatcher(None, label, brand).ratio() >= 0.8:
