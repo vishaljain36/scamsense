@@ -54,8 +54,8 @@ Python · Streamlit · Google Gemini API (`google-genai`) · Pillow · tldextrac
 
 | Metric | Result |
 |---|---|
-| Scams caught | __ / 14 |
-| Genuine messages wrongly flagged | __ / 6 |
+| Scams caught | 8 / 14 |
+| Genuine messages wrongly flagged | 0 / 6 |
 
 Run `python run_tests.py` to reproduce. Results are saved to `test_results.json`.
 
