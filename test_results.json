@@ -1,11 +1,11 @@
 {
-  "mode": "rules-only",
-  "model": null,
-  "scams_caught": 8,
+  "mode": "ai+rules",
+  "model": "gemini-3.8-flash",
+  "scams_caught": 10,
   "scams_total": 14,
   "false_alarms": 0,
   "legit_total": 6,
-  "exact_matches": 10,
+  "exact_matches": 12,
   "results": [
     {
       "id": 1,
@@ -19,7 +19,7 @@
       "ai_summary": null,
       "correct": true,
       "exact": true,
-      "error": null
+      "error": "ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu"
     },
     {
       "id": 2,
@@ -33,7 +33,7 @@
       "ai_summary": null,
       "correct": true,
       "exact": false,
-      "error": null
+      "error": "ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu"
     },
     {
       "id": 3,
@@ -47,7 +47,7 @@
       "ai_summary": null,
       "correct": true,
       "exact": false,
-      "error": null
+      "error": "ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu"
     },
     {
       "id": 4,
@@ -61,7 +61,7 @@
       "ai_summary": null,
       "correct": true,
       "exact": false,
-      "error": null
+      "error": "ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu"
     },
     {
       "id": 5,
@@ -75,7 +75,7 @@
       "ai_summary": null,
       "correct": false,
       "exact": false,
-      "error": null
+      "error": "ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu"
     },
     {
       "id": 6,
@@ -89,7 +89,7 @@
       "ai_summary": null,
       "correct": false,
       "exact": false,
-      "error": null
+      "error": "ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu"
     },
     {
       "id": 7,
@@ -103,20 +103,20 @@
       "ai_summary": null,
       "correct": true,
       "exact": false,
-      "error": null
+      "error": "ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu"
     },
     {
       "id": 8,
       "category": "Crypto investment",
       "expected": "Dangerous",
       "text": "Double your Bitcoin in 24 hours! Our private trading group guarantees 100% returns. Limited seats left. Send 0.05 BTC to the wallet below to join and start earning.",
-      "got": "Safe",
-      "final_score": 20,
+      "got": "Dangerous",
+      "final_score": 98,
       "rule_score": 20,
-      "ai_score": null,
-      "ai_summary": null,
-      "correct": false,
-      "exact": false,
+      "ai_score": 98,
+      "ai_summary": "This is a classic cryptocurrency scam designed to steal your funds with impossible promises of doubling your money.",
+      "correct": true,
+      "exact": true,
       "error": null
     },
     {
@@ -124,13 +124,13 @@
       "category": "Utility disconnection",
       "expected": "Dangerous",
       "text": "Dear consumer, your electricity connection will be disconnected tonight at 9:30 pm because your previous bill was not updated. Call 98XXXXXX10 immediately and pay through the link we send.",
-      "got": "Safe",
-      "final_score": 15,
+      "got": "Dangerous",
+      "final_score": 95,
       "rule_score": 15,
-      "ai_score": null,
-      "ai_summary": null,
-      "correct": false,
-      "exact": false,
+      "ai_score": 95,
+      "ai_summary": "This is a widespread scam designed to panic you into sending money to fraudsters posing as your electricity provider.",
+      "correct": true,
+      "exact": true,
       "error": null
     },
     {
@@ -141,8 +141,8 @@
       "got": "Dangerous",
       "final_score": 95,
       "rule_score": 95,
-      "ai_score": null,
-      "ai_summary": null,
+      "ai_score": 95,
+      "ai_summary": "This is a fake Netflix message designed to steal your credit card and personal details.",
       "correct": true,
       "exact": true,
       "error": null
@@ -159,7 +159,7 @@
       "ai_summary": null,
       "correct": false,
       "exact": false,
-      "error": null
+      "error": "ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu"
     },
     {
       "id": 12,
@@ -173,7 +173,7 @@
       "ai_summary": null,
       "correct": true,
       "exact": true,
-      "error": null
+      "error": "ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu"
     },
     {
       "id": 13,
@@ -187,7 +187,7 @@
       "ai_summary": null,
       "correct": false,
       "exact": false,
-      "error": null
+      "error": "ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu"
     },
     {
       "id": 14,
@@ -201,7 +201,7 @@
       "ai_summary": null,
       "correct": true,
       "exact": true,
-      "error": null
+      "error": "ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu"
     },
     {
       "id": 15,
@@ -215,7 +215,7 @@
       "ai_summary": null,
       "correct": true,
       "exact": true,
-      "error": null
+      "error": "ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu"
     },
     {
       "id": 16,
@@ -229,7 +229,7 @@
       "ai_summary": null,
       "correct": true,
       "exact": true,
-      "error": null
+      "error": "ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu"
     },
     {
       "id": 17,
@@ -243,7 +243,7 @@
       "ai_summary": null,
       "correct": true,
       "exact": true,
-      "error": null
+      "error": "ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu"
     },
     {
       "id": 18,
@@ -257,7 +257,7 @@
       "ai_summary": null,
       "correct": true,
       "exact": true,
-      "error": null
+      "error": "ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu"
     },
     {
       "id": 19,
@@ -271,7 +271,7 @@
       "ai_summary": null,
       "correct": true,
       "exact": true,
-      "error": null
+      "error": "ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu"
     },
     {
       "id": 20,
@@ -285,7 +285,7 @@
       "ai_summary": null,
       "correct": true,
       "exact": true,
-      "error": null
+      "error": "ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your cu"
     }
   ]
 }
