@@ -62,7 +62,7 @@ Run `python run_tests.py` to reproduce. Results are saved to `test_results.json`
 ## Run it locally
 
 ```bash
-git clone https://github.com/YOUR-GITHUB-USERNAME/scamsense.git
+git clone https://github.com/vishaljain36/scamsense.git
 cd scamsense
 python -m venv venv
 venv\Scripts\activate          # Mac/Linux: source venv/bin/activate
